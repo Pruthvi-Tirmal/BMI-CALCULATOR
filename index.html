@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <title>BMI Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>BMI Calculator</header>
+      <div class="textContainer">
+        <input
+          type="text"
+          name=""
+          value=""
+          id="name"
+          placeholder="Enter Your Name"
+          required
+        />
+        <input
+          type="text"
+          name=""
+          value=""
+          id="height"
+          placeholder="Enter Height in Ft"
+          required
+        />
+        <input
+          type="text"
+          name=""
+          id="weight"
+          placeholder="Enter Weight in Kg"
+          value=""
+          required
+        />
+        <button onclick="myBmi()" id="btn" type="submit">Result</button>
+      </div>
+      <div class="answerContainer">
+        <input
+          type="text"
+          name=""
+          id="answer"
+          placeholder="----.----.-"
+          disabled
+        />
+        <input
+          type="text"
+          name=""
+          id="textAnswer"
+          placeholder="A Healthy BMI Range is Between 19 and 25"
+          value=""
+        />
+      </div>
+    </div>
+    <script src="bmi.js"></script>
+  </body>
+</html>
