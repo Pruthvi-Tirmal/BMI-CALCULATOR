@@ -43,7 +43,7 @@ header {
 input[type="text"] {
   border-radius: 25px;
   font-family: "Bree Serif", serif;
-  font-size: 1.9rem;
+  font-size: 1.6rem;
   font-weight: 600;
   outline: none;
   background-color: #40c4ff;
@@ -91,7 +91,7 @@ input[type="text"] {
 #textAnswer {
   /* height: 10px; */
   padding: 0;
-  font-size: 1.7rem;
+  font-size: 1.2rem;
   text-align: center;
   width: 100%;
 }
@@ -107,12 +107,67 @@ input[type="text"] {
       "textCon textCon"
       "ansCon ansCon";
     margin: 10px auto;
+    width: 80%;
   }
   #textAnswer {
     font-size: 1.5rem;
   }
   #answer {
     max-width: 300px;
-    font-size: 4.3rem;
+    font-size: 3.8rem;
+  }
+}
+@media (max-width: 700px) {
+  .container {
+    width: 80%;
+    margin: 10px auto;
+    /* border-radius: none; */
+  }
+  input[type="text"] {
+    font-size: 1.9rem;
+  }
+  #answer {
+    font-size: 3.8rem;
+  }
+  #textAnswer {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 90%;
+    /* margin: 3px auto; */
+    /* border-radius: none; */
+  }
+  input[type="text"] {
+    font-size: 1.5rem;
+  }
+  #answer {
+    font-size: 3.6rem;
+  }
+  #textAnswer {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 80%;
+  }
+  .container {
+    width: 100%;
+
+    margin: 0;
+    border-radius: 0;
+  }
+  input[type="text"] {
+    font-size: 1.3rem;
+  }
+  #answer {
+    font-size: 3rem;
+  }
+  #textAnswer {
+    font-size: 1rem;
   }
 }
